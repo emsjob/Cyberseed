@@ -3,7 +3,12 @@ const express = require('express');
 const app = express();
 
 app.get('/data', (req, res) => {
-    const data = { message: 'Hello from the server' }
+    const data = {
+        prompt: 'Prompt from server',
+        data: 'Data from server',
+        terminal: 'Terminal from server',
+        visuals: 'Visuals from server',
+    }
     res.send(data);
 });
 
